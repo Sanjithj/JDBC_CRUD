@@ -21,6 +21,9 @@ public class JDBC_Sql {
 	      insert into Address_Book_Table values("Karan","Kanaka","Wangova","Miraz","Argentina",686333,867686864,"sanji@gmail.com");
 	      insert into Address_Book_Table values("Bheema","Rana","jalawar","capa","Mexico",786768,572552211,"rana@gmail.com");
 
+	    //*********Ability to update the contact**********
+	       update Address_Book_Table SET state = "Finland" where firstName="Bheema";
+
 	}
 
 }
