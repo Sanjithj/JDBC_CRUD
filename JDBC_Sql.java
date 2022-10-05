@@ -26,6 +26,9 @@ public class JDBC_Sql {
 	      
 	    //***********Ability to delete contact***********
 	      delete from Address_Book_Table where firstName = "Bheema";
+	      
+	    //**********Ability to retrive using city or state**********
+	      select * from Address_Book_Table where city="Hassan" or state="karnatka";
 
 	}
 
