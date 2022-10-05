@@ -32,6 +32,12 @@ public class JDBC_Sql {
 	      
 	    //*************Size of address book by city or state*************
 	      select COUNT(firstName) from Address_Book_Table where city = "Hassan" or state = 'karnatka';
+	    
+	    //*******Sorted person name by city in ascending order*********
+	      select city , firstName from Address_Book_Table ORDER BY city ASC;
+	      
+	    //*******Sorted person name by city in descending order*********
+	     select city , firstName from Address_Book_Table ORDER BY city desc;
 
 	}
 
