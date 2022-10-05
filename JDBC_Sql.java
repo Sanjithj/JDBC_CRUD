@@ -46,6 +46,9 @@ public class JDBC_Sql {
 	      update Address_Book_Table set type = "relative" where firstName = "Karan"";
 	      select *from Address_Book_Table;
 
+	    //**********************Ability to get number of contact persons ****************
+	      select COUNT(firstName) from Address_Book_Table;
+
 	}
 
 }
