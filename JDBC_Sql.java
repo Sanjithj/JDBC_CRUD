@@ -22,7 +22,10 @@ public class JDBC_Sql {
 	      insert into Address_Book_Table values("Bheema","Rana","jalawar","capa","Mexico",786768,572552211,"rana@gmail.com");
 
 	    //*********Ability to update the contact**********
-	       update Address_Book_Table SET state = "Finland" where firstName="Bheema";
+	      update Address_Book_Table SET state = "Finland" where firstName="Bheema";
+	      
+	    //***********Ability to delete contact***********
+	      delete from Address_Book_Table where firstName = "Bheema";
 
 	}
 
