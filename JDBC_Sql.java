@@ -29,6 +29,9 @@ public class JDBC_Sql {
 	      
 	    //**********Ability to retrive using city or state**********
 	      select * from Address_Book_Table where city="Hassan" or state="karnatka";
+	      
+	    //*************Size of address book by city or state*************
+	      select COUNT(firstName) from Address_Book_Table where city = "Hassan" or state = 'karnatka';
 
 	}
 
