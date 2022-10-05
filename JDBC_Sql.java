@@ -37,7 +37,14 @@ public class JDBC_Sql {
 	      select city , firstName from Address_Book_Table ORDER BY city ASC;
 	      
 	    //*******Sorted person name by city in descending order*********
-	     select city , firstName from Address_Book_Table ORDER BY city desc;
+	      select city , firstName from Address_Book_Table ORDER BY city desc;
+
+	    //********* Ability to identify each Address Book with name and type**********
+	      ALTER TABLE Address_Book_Table
+	      ADD type varchar(50);
+
+	      update Address_Book_Table set type = "relative" where firstName = "Karan"";
+	      select *from Address_Book_Table;
 
 	}
 
